@@ -1,0 +1,2 @@
+// Exporting Env
+conda env export > environment.yaml
