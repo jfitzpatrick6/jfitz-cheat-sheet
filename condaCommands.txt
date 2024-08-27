@@ -1,6 +1,9 @@
 // Exporting Env
 conda env export > environment.yaml
 
+// Creating an Env
+conda create -n (name)
+
 // Activating env from file
 conda env update --file environment.yaml --prune
 conda env create --file environment.yaml
