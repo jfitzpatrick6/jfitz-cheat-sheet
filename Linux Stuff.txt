@@ -1,0 +1,3 @@
+# Securing And Setting up Linux Server - Comments help
+https://www.reddit.com/r/selfhosted/comments/1f3y16m/guide_securing_a_linux_server/
+https://kenhv.com/blog/securing-a-linux-server
