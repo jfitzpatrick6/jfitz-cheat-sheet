@@ -1,0 +1,31 @@
+Docker self contains applications inside a container. A container allows you to bundle everything needed for said project within itself. Easy deployment on other machines.
+
+Docker Installation Guide:
+https://docs.docker.com/engine/install/
+
+Key Concepts:
+Image: A blueprint for your application, containing all dependencies and environment settings.
+Container: A running instance of an image.
+Dockerfile: A script that contains instructions for building a Docker image.
+Docker Hub: A public repository of pre-built Docker images (think of it like GitHub but for Docker images).
+
+Basic Commands:
+docker --version
+docker run {container name} #note you can pull premade containers from docker hub
+  -d will run the container in detached mode, so it will continue after closing terminal ex docker run -d -p 80:80 nginx
+  -p will map to port, see above example.
+docker ps #list all running containers
+docker stop {container id}
+docker start {container id} #Starts a stopped container.
+docker build . #Will build an image in current directory, the . refers to current directory.
+  -f will specify path to dockerfile
+  --build-arg allows build arguments
+  -t used to tag the image with a name and optionally a tag (version) ex image-name:tag
+docker exec #Will execute a command within an image, ex docker exec -it {container id} /bin/bash, will open a cmd in container.
+  -i is interactive, keep the stdin open.
+  -t llocates a pseudo-TTY (terminal), which provides a terminal-like interface
+  /bin/bash: This is the command you want to execute inside the container. In this case, it starts a Bash shell. You could replace /bin/bash with any other command you want to run inside the container.
+
+
+Note:
+Cannot run Linux and Windows containers on same machine, though you can use virtual machines to work around this. If I need both types, I need a hybrid env using VMs.
