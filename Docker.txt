@@ -3,6 +3,9 @@ Docker self contains applications inside a container. A container allows you to 
 Docker Installation Guide:
 https://docs.docker.com/engine/install/
 
+Docker Training:
+https://training.play-with-docker.com/
+
 Key Concepts:
 Image: A blueprint for your application, containing all dependencies and environment settings.
 Container: A running instance of an image.
