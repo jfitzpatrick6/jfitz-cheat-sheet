@@ -29,3 +29,5 @@ docker exec #Will execute a command within an image, ex docker exec -it {contain
 
 Note:
 Cannot run Linux and Windows containers on same machine, though you can use virtual machines to work around this. If I need both types, I need a hybrid env using VMs.
+
+If the application that requires access to MySQL is also running in a container, DO NOT open any port. Docker containers can communicate within the virtual network without any bind/forward at all. Bind/expose/forward is only required to allow access from outside dockers virtual network.
