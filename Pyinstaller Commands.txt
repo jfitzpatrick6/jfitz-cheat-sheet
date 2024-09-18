@@ -1,0 +1,8 @@
+pyinstaller --onefile gui.py
+This command will generate a single executable file (--onefile option) for your gui.py. By default, the output will be placed in the dist directory.
+
+pyinstaller --onefile --noconsole gui.py
+To hide the console window when running a GUI application (for Windows), add the --noconsole flag:
+
+pyinstaller --onefile --add-data 'path/to/datafile:relative/destination' gui.py
+If your project has additional data files, like images or config files, you can specify them using the --add-data option:
