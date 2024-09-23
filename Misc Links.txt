@@ -1,2 +1,5 @@
 Media Server Guide
 https://www.linuxserver.io/blog/2017-06-24-the-perfect-media-server-2017
+
+Split DNS:
+https://homenetworkguy.com/how-to/configure-split-dns-opnsense-using-unbound/
